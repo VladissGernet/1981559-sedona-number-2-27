@@ -173,7 +173,16 @@
           <div class="feedback-form__title" id="text-place-legend">Опишите свои эмоции:</div>
         </div>
         <label class="visually-hidden" for="user-text">Поле описания своих эмоций.</label>
-        <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="feedback-form__text-place-wrapper">
+          <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="feedback-form__counter">
+            Использовано&nbsp;
+            <output class="feedback-form__char-counter" for="user-text">
+              0
+            </output>
+            /142 символов.
+          </div>
+        </div>
       </div>
 
       <div class="feedback-form__button-container">
