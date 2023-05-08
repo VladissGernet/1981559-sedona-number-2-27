@@ -281,6 +281,24 @@
   }
 }
 
+.feedback-form__counter {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  text-transform: none;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.feedback-form__text-place-wrapper {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    width: 768px;
+  }
+}
+
 .feedback-form__user--text-place .feedback-form__title {
   @media (min-width: @tablet-width) {
     position: relative;
@@ -321,6 +339,17 @@
     min-height: 160px;
     margin-top: 28px;
   }
+}
+
+.feedback-form__user-text--warning {
+  outline: 4px solid #ff6347;
+  color: #ff6347;
+}
+
+.feedback-form__user-text--warning + .feedback-form__counter {
+  color: #ff6347;
+  opacity: 1;
+  font-weight: 700;
 }
 
 .feedback-form__button-container {

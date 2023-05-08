@@ -16,6 +16,22 @@
   }
 }
 
+.card-like:hover .card-like__icon {
+  opacity: 0.2;
+
+  @media (min-width: @desktop-width) {
+    opacity: 0.6;
+  }
+}
+
+.card-like:active .card-like__icon {
+  opacity: 0.1;
+
+  @media (min-width: @desktop-width) {
+    opacity: 0.3;
+  }
+}
+
 .card-like__value {
   margin-left: 10px;
 
